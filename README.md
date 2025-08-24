@@ -1,8 +1,8 @@
-# Churn Prediction - Take Home Assignment
+# Churn Prediction - Wei Wang
 
 ## Overview
 
-This project contains the solution to a churn prediction task as part of the SafetyCulture Data Scientist interview process.
+This project contains the solution to a churn prediction task.
 
 The goal is to build a robust, interpretable pipeline that predicts whether a customer is likely to **churn** based on historical and behavioral data. The solution includes traditional machine learning models and deep learning approaches to cover a wide range of patterns.
 
@@ -23,16 +23,15 @@ CHURN-PREDICTION/
 │
 ├── outputs/                              # Processed data and PCA results
 │
-├── resources/                                 # Raw and reference data
+├── resources/                                 # Raw and Reference Data (removed due to data sensitivity)
 │   ├── churn_orgs.csv
 │   ├── data_commercial.csv
 │   ├── data_product.csv
-│   └── Task_README.md
 │
 ├── src/                                  # Source code for the pipeline
 │   ├── __init__.py
 │   ├── data_loader.py                    # Data loading
-│   ├── data_analysis.py                  # EDA and visualizations
+│   ├── data_analysis.py                  # EDA and visualisations
 │   ├── data_preprocessor.py              # Preprocessing pipeline
 │   ├── model_prediction.py               # Model training and evaluation
 │   ├── model.py                          # Model classes 
@@ -48,7 +47,7 @@ CHURN-PREDICTION/
 - Handling missing values, outliers, and duplicates
 - Standard scaling of numeric features
 - Optional PCA for dimensionality reduction
-- Time-based train/test splitting to simulate production scenario
+- Time-based train/test splitting to simulate a production scenario
 
 ### 2. Modeling
 - **Traditional Models**:
@@ -56,7 +55,7 @@ CHURN-PREDICTION/
   - Random Forest
   - Gradient Boosting
 - **Deep Learning Models** (optional, PyTorch-based):
-  - LSTM (captures sequence behavior)
+  - LSTM (captures sequence behaviour)
   - 1D CNN (detects feature pattern signals)
 
 ### 3. Evaluation
@@ -92,3 +91,8 @@ CHURN-PREDICTION/
    cd notebooks
    jupyter notebook
    ```
+5. Run Streamlit for better visualisation analysis
+   ```bash
+   streamlit run streamlit_presentation.py
+   ```
+   <img width="1912" height="954" alt="image" src="https://github.com/user-attachments/assets/c36e016c-14aa-4b8f-bcf7-2d7ea1d3d24f" />
